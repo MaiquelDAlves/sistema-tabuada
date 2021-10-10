@@ -7,12 +7,11 @@ document.querySelectorAll('.botoes button').forEach((item => {
 
 function clickEvent(e) {
     let key = e.target.getAttribute('data')
-    let resultado = ''
-    let options = ''
+    let resultados = ''
 
     for (let i in n) {
-        options += `${key} X ${i} = ${resultado = key * i}<br>`
+        resultados += `${key} X ${i} = ${key * i}<br>`
     }
-    document.querySelector('.resultado').innerHTML = options;  
+    document.querySelector('.resultado').innerHTML = resultados;  
     document.querySelector('.resultado').style.display = 'flex'; 
 }
