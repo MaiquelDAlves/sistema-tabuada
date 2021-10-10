@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #141414;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#141414;
+    margin: 0 10px;
+}
+.botoes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 5px;
+}
+.botoes button {
+    margin-bottom: 10px;
+    width: 120px;
+    padding: 8px;
+    margin-right: 70px;
+    font-weight: 700;
+    border: 0;
+}
+.botoes button:hover {
+    background-color: #bbb;
+}
+.tela {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.resultado{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    display: none;
+}
+
+@media (max-width:468px) {
+    .container {
+        flex-direction: column;
+        margin: 0;
+        height: auto;
+    }
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .botoes button {
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 8px;
+        font-weight: 700;
+        border: 0;
+        width: 300px;
+        
+    }
+    .tela {
+       display: block;
+       margin: 0;
+       width: 90%;
+    }
+    .resultado {
+        font-size: 20px;
+        align-items: center;
+        margin-right: 0;
+    }
+
+}
